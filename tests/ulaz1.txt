@@ -1,0 +1,27 @@
+.data
+a: .word pedja
+.text
+
+.global START,niz,duzina,min,pedja
+
+START:
+
+
+almov r0,duzina
+nepush r0
+almov r0,&niz
+nepush r0
+
+almov r0,r7
+aladd r0,10
+alpush r0
+aljmp $min
+
+almov 1000,r0
+alpush 1234
+alpop r5
+
+aljmp 0
+
+
+.end

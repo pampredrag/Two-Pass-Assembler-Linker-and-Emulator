@@ -1,0 +1,33 @@
+100 192 -1 -1
+		 #.Tabela simbola 
+ime		sekcija		vred		lg		rb		poc		kraj
+
+.text		text		00		loc		1		100		192
+UND		UND		00		loc		0
+
+
+	 #.ret.text
+offset		tip_adr    		rb		imeRB
+
+
+
+	 #.ret.data
+offset		tip_adr    		rb		imeRB
+
+
+
+	 #.ret.rodata
+offset		tip_adr    		rb		imeRB
+
+
+
+	 #.text init content
+
+E5  00  F5  00  4B  00  F6  08  FE  FF  F5  00  01  00  F6  08  1E  00  F5  00  55  00  F6  08  FE  FF  F5  00  01  00  F6  08  1E  00  F5  00  43  00  F6  08  FE  FF  F5  00  01  00  F6  08  1E  00  F5  00  0A  00  F6  08  FE  FF  F5  00  01  00  F6  08  1E  00  E9  00  F0  00  E5  00  F5  10  FC  FF  F6  08  FE  FF  F5  00  01  00  F6  08  1E  00  E9  00  F0  00  
+
+	 #.data init content
+
+
+
+	 #.rodata init content
+

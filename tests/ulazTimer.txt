@@ -1,0 +1,37 @@
+.text
+alpush r0
+almov r0,75
+almov *65534,r0
+almov r0,1
+almov *30,r0
+
+almov r0,85
+almov *65534,r0
+almov r0,1
+almov *30,r0
+
+almov r0,67
+almov *65534,r0
+almov r0,1
+almov *30,r0
+
+almov r0,10
+almov *65534,r0
+almov r0,1
+almov *30,r0
+
+alpop r0
+aliret
+
+
+alpush r0
+
+almov r0,*65532
+almov *65534,r0
+almov r0,1
+almov *30,r0
+
+
+alpop r0
+aliret
+.end

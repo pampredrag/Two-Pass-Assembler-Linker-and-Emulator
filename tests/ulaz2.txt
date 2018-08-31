@@ -1,0 +1,33 @@
+.data
+.global pedja
+.global niz,duzina
+niz: .word 3,5,4,2,7,6
+duzina: .word 6
+
+.text
+.global min
+pedja:
+min:
+
+almov r0,r6[2]
+almov r1,r6[4]
+
+almov r2,r0[0]
+aladd r0,2
+alsub r1,1
+eqjmp &kraj
+
+loop:
+almov r3,r0[0]
+alcmp r2,r3
+gtmov r2,r3
+aladd r0,2
+alsub r1,1
+
+nejmp &loop
+
+kraj:
+almov r0,r2
+alret
+
+.end

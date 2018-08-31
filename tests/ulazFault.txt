@@ -1,0 +1,71 @@
+.text
+alpush r0
+
+almov r0,70
+almov *65534,r0
+almov r0,1
+almov *30,r0
+
+almov r0,65
+almov *65534,r0
+almov r0,1
+almov *30,r0
+
+almov r0,85
+almov *65534,r0
+almov r0,1
+almov *30,r0
+
+almov r0,76
+almov *65534,r0
+almov r0,1
+almov *30,r0
+
+almov r0,84
+almov *65534,r0
+almov r0,1
+almov *30,r0
+
+almov r0,10
+almov *65534,r0
+almov r0,1
+almov *30,r0
+
+alpop r0
+aliret
+
+alpush r0
+
+almov r0,83
+almov *65534,r0
+almov r0,1
+almov *30,r0
+
+almov r0,84
+almov *65534,r0
+almov r0,1
+almov *30,r0
+
+almov r0,65
+almov *65534,r0
+almov r0,1
+almov *30,r0
+
+almov r0,82
+almov *65534,r0
+almov r0,1
+almov *30,r0
+
+almov r0,84
+almov *65534,r0
+almov r0,1
+almov *30,r0
+
+almov r0,10
+almov *65534,r0
+almov r0,1
+almov *30,r0
+
+alpop r0
+aliret
+.end

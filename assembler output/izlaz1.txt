@@ -1,0 +1,44 @@
+1000 1040 -1 -1
+		 #.Tabela simbola 
+ime		sekcija		vred		lg		rb		poc		kraj
+
+.data		data		00		loc		2		1000		1002
+.text		text		00		loc		1		1002		1040
+START		.text		3EA		glo		6
+UND		UND		00		loc		0
+a		.data		3E8		loc		5
+duzina		UND		00		glo		8
+min		UND		00		glo		9
+niz		UND		00		glo		7
+pedja		UND		00		glo		10
+
+
+	 #.ret.text
+offset		tip_adr    		rb		imeRB
+
+3EC		R_386_32		8		duzina
+3F2		R_386_32		7		niz
+400		R_386_32_PC32		9		min
+
+
+	 #.ret.data
+offset		tip_adr    		rb		imeRB
+
+3E8		R_386_32		10		pedja
+
+
+	 #.ret.rodata
+offset		tip_adr    		rb		imeRB
+
+
+
+	 #.text init content
+
+F5  10  00  00  65  00  F5  00  00  00  65  00  F5  0F  C1  00  0A  00  E5  00  C1  E0  FE  FF  F4  08  E8  03  E4  00  D2  04  E9  A0  F5  E0  00  00  
+
+	 #.data init content
+
+00  00  
+
+	 #.rodata init content
+
